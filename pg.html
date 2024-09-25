@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+<body>
+    <h1>Course Recommendation</h1>
+    <form method="POST" action="/predict">
+        <label for="ug_course">UG Course:</label>
+        <select id="ug_course" name="ug_course">
+            <option value="0">Computer Science</option>
+            <option value="1">Statistics</option>
+            <option value="2">Mathematics</option>
+            <option value="3">Information Technology</option>
+        </select><br>
+        <label for="hsc">HSC:</label>
+        <select id="hsc" name="hsc">
+            <option value="0">Computer Science</option>
+            <option value="1">Mathematics</option>
+            <option value="2">Statistics</option>
+            <option value="3">Business Mathematics</option>
+        </select><br>
+        <label for="interest">Interest:</label><br>
+        <input type="checkbox" id="designing" name="interest" value="1">
+        <label for="designing">Designing</label><br>
+        <input type="checkbox" id="development" name="interest" value="2">
+        <label for="development">Development</label><br>
+        <input type="checkbox" id="software" name="interest" value="3">
+        <label for="software">Software</label><br>
+        <input type="checkbox" id="hardware" name="interest" value="4">
+        <label for="hardware">Hardware</label><br>
+        <input type="checkbox" id="coding" name="interest" value="5">
+        <label for="coding">Coding</label><br>
+        <input type="checkbox" id="analysis" name="interest" value="6">
+        <label for="analysis">Analysis</label><br>
+        <input type="checkbox" id="business" name="interest" value="7">
+        <label for="business">Business</label><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
